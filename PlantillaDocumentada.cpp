@@ -15,21 +15,32 @@
 #define forn2(n,i) for(int i = n; i>=0; i--)
 
 //Operaciones
+
+/*
+ * (x+ y) mod m = (x mod m+ y mod m) mod m
+ */
 #define msum(x,y,m)  ((x mod m) + (y mod m)) mod m
+/*
+ * (x− y) mod m = (x mod m− y mod m) mod m
+ */
 #define mres(x,y,m)  ((x mod m) - (y mod m)) mod m
+/*
+ * (x · y) mod m = (x mod m· y mod m) mod m
+ */
 #define mmul(x,y,m)  ((x mod m) * (y mod m)) mod m
+/*
+* x^n mod m = (x mod m)^n mod m
+ */
 #define mdiv(x,n,m)  expo((x mod m),n) mod m
+
+
 #define pb push_back;
 
 //Impresiones
 #define endl "\n"
 
-//COMENTARIOS IMPORTANTES
-/*
-
-
-*/
-
+//Funciones
+//Exponenciar un numero con la base y el
 ll expo(ll b, ll e ) {
     ll ans = 1;
     for(int i = 0 ; i < e ; i++) {
@@ -37,6 +48,14 @@ ll expo(ll b, ll e ) {
     }
     return ans;
 }
+
+
+//COMENTARIOS IMPORTANTES
+/*
+
+
+*/
+
 
 using namespace std;
 
