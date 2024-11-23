@@ -9,10 +9,6 @@
 #define vi vector<int>
 #define vl vector<ll>
 #define vs vector<string>
-//Stack
-#define si stack<int>
-#define sl stack<ll>
-#define ss stack<string>
 
 //Ciclos
 #define forn(i,n) for(int i = 0; i<n; i++)
@@ -33,10 +29,6 @@
  * (x · y) mod m = (x mod m· y mod m) mod m
  */
 #define mmul(x,y,m)  ((x mod m) * (y mod m)) mod m
-/*
-* x^n mod m = (x mod m)^n mod m
- */
-#define mdiv(x,n,m)  expo((x mod m),n) mod m
 
 //Push back del vector
 #define pb push_back;
@@ -44,18 +36,6 @@
 
 //Impresiones
 #define endl "\n"
-
-//Funciones
-
-//Exponenciar un numero con la base y el
-ll expo(ll b, ll e ) {
-    ll ans = 1;
-    for(int i = 0 ; i < e ; i++) {
-        ans *= b;
-    }
-    return ans;
-}
-
 
 //COMENTARIOS IMPORTANTES
 /*
