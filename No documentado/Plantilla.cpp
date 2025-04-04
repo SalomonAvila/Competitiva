@@ -8,6 +8,8 @@ using namespace std;
 #define forn(i,n) for(int i = 0; i<n; i++)
 #define forn2(n,i) for(int i = n; i>=0; i--)
 #define forn3(n) for(auto &i : n)
+#define sr(v) sort(v.begin(), v.end())
+#define sr2(v) sort(v.begin(), v.end(), greater<int>())
 #define msum(x,y,m)  ((x mod m) + (y mod m)) mod m
 #define mres(x,y,m)  ((x mod m) - (y mod m)) mod m
 #define mmul(x,y,m)  ((x mod m) * (y mod m)) mod m
